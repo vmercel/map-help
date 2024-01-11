@@ -1,0 +1,32 @@
+{
+  "name": "mapappproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file finals.js",
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file finals.js"
+  },
+  "author": "iamhammyboi19",
+  "license": "ISC",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel-bundler": "^1.12.5",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.23.3",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "nodemailer": "^4.7.0",
+    "pug": "^3.0.2",
+    "regenerator-runtime": "^0.13.9",
+    "twilio": "^3.82.0"
+  }
+}

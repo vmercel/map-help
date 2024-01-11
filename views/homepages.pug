@@ -1,0 +1,51 @@
+doctype html
+//
+  @license
+  Copyright 2019 Google LLC. All Rights Reserved.
+  SPDX-License-Identifier: Apache-2.0
+head
+  title NEU AI Map Help App
+  script(src='https://polyfill.io/v3/polyfill.min.js?features=default')
+  link(rel='stylesheet' type='text/css' href='./style.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(rel='stylesheet' href='https://unpkg.com/leaflet@1.8.0/dist/leaflet.css' integrity='sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==' crossorigin='')
+  link(rel='stylesheet' href='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css')
+  link(rel='stylesheet' href='/style.css')
+  link(rel='icon' type='image/x-icon' href='/map-icon-logo.png')
+  link(href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Poppins:wght@100;200;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap' rel='stylesheet')
+  script(defer='' src='https://unpkg.com/leaflet@1.8.0/dist/leaflet.js' integrity='sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==' crossorigin='')
+  script(defer='' src='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js')
+  script(defer='' src='https://code.iconify.design/2/2.2.1/iconify.min.js')
+  script(defer='' src='https://apps.elfsight.com/p/platform.js')
+  script(defer='' src='/js/finals.js')
+  script(defer='' src='index.js')
+.container
+  .helper
+    .ai-neu-logo-con
+      figure.ai-neu-logo-fig
+        img.lazy-image--loaded(src='https://air.neu.edu.tr/wp-content/uploads/sites/192/2022/03/31/ai-and-robotics-institute.svg?ver=82e2b89dfa810bd8b03a0c21d05e9539')
+      figure.ai-neu-logo-fig-2
+        img.lazy-image--loaded-2(src='https://iot.neu.edu.tr/wp-content/uploads/sites/106/2021/08/12/iot-logo.svg?ver=bec7f896160cb26e21d81a24ae0cde17')
+    h3.head-title NEU AI Maps Helper
+    p.helper-paragragh
+      | You can always call for help during emergencies 
+      br
+      |         so we can help you locate the nearest 
+      br
+      |         Police Station, Hospital, Bus Stop, etc.
+    form.helper-form
+      .address-div
+        select.address-input--
+          option Hospital
+          option Police
+          option Fire
+        button.theHelp-btn
+          a.help-btn(href='/maplocation') HELP!!!
+  #map
+.elfsight-app-daa9d705-3956-4f5a-bd12-038932ac1224
+script(type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+script(nomodule='' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+//
+  <script
+  async
